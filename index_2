@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sample Statement</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+    font-family: Arial, sans-serif;
+    background: #f2f4f3;
+    color: #222;
+}
+
+.statement {
+    max-width: 820px;
+    margin: auto;
+    padding: 35px 25px;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.logo-area {
+    width: 150px;
+    height: 90px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed #999;
+    color: #777;
+}
+
+.logo-area img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+h2 {
+    color: #206040;
+    margin: 15px 0;
+}
+
+h3 {
+    margin: 8px 0 18px;
+    font-size: 20px;
+}
+
+p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.label {
+    font-size: 13px;
+    color: #777;
+    font-weight: bold;
+}
+
+.balance {
+    color: #408060;
+}
+
+.watermark {
+    color: #b42318;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #b42318;
+    display: inline-block;
+    padding: 7px 15px;
+    margin: 10px 0;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .statement {
+        padding: 25px 15px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="statement">
+
+    <!-- LOGO PLACEHOLDER -->
+    <div class="logo-area">
+        <span>LOGO PLACEHOLDER</span>
+        <!-- Add an authorized logo here:
+        <img src="logo.png" alt="Logo">
+        -->
+    </div>
+
+    <h2>Sample Statement</h2>
+
+    <div class="watermark">
+        SAMPLE — NOT AN OFFICIAL BANK DOCUMENT
+    </div>
+
+    <p>
+        This is a demonstration layout.
+        It is not issued or verified by any bank.
+    </p>
+
+    <h2>Statement Summary</h2>
+
+    <p class="label">ACCOUNT NO:</p>
+    <h3>XXXXXX</h3>
+
+    <p class="label">ACCOUNT TYPE:</p>
+    <h3>Sample Account</h3>
+
+    <p class="label">ACCOUNT NAME:</p>
+    <h3>Sample Account Holder</h3>
+
+    <p class="label">OPENING BALANCE:</p>
+    <h3 class="balance">0.00</h3>
+
+    <p class="label">CLOSING BALANCE:</p>
+    <h3 class="balance">0.00</h3>
+
+    <p class="label">STATEMENT PERIOD:</p>
+    <h3>DD-MM-YYYY TO DD-MM-YYYY</h3>
+
+    <p class="label">CERTIFICATE ID:</p>
+    <h3>DEMO-000000</h3>
+
+    <p class="label">GENERATED DATE:</p>
+    <h3>DD-MM-YYYY</h3>
+
+    <div class="footer">
+        <p>Demonstration Only</p>
+        <p>Not valid for financial or verification purposes.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
